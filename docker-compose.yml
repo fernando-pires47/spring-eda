@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  spring-eda:
+    build: ./eventdriven
+    container_name: spring-eda
+    environment:
+      SPRING_PROFILES_ACTIVE: "dev"
+    ports:
+      - "8080:8080"
